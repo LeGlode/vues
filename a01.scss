@@ -1,0 +1,45 @@
+@import 'couleurs';
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    margin: 1rem;
+}
+
+
+.boite {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 6px;
+    border: 3px solid transparent;
+    margin: .5rem;
+}
+
+
+.rouge {
+    background-color: $rouge4;
+    border-radius: 6px;
+    border-color:  invert($rouge4, 50%);;
+}
+
+.bleu {
+    background-color: $bleu8;
+    border-radius: 6px;
+    border-color:  invert($bleu8, 50%);
+}
+
+.vert {
+    background-color: $vert9;
+    border-radius: 6px;
+    border-color:  invert($vert9, 50%);
+}

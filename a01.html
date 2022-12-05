@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <link href="a01.css" rel="stylesheet"/>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="application">
+      <h1>{{ titre }}</h1>
+      <!-- <div v-if="afficheRouge" class="boite rouge"></div> -->
+      <!-- <div v-if="afficheBleu" class="boite bleu"></div> -->
+      <!-- <div v-if="afficheVert" class="boite vert"></div> -->
+
+      <div class="boite rouge"></div>
+      <div class="boite bleu"></div>
+      <div class="boite vert"></div>
+
+
+      
+      <div v-if="afficheRouge" class="boite rouge"></div>
+      <div v-else-if="afficheBleu" class="boite bleu"></div>
+      <div v-else class="boite vert"></div>
+      
+      <textarea v-model="bio" disabled></textarea>
+    </div>
+
+  </body>
+  <script>
+    const { createApp } = Vue;
+    createApp({
+	data() {
+	    return {
+		titre: "Louison Bobet",
+		bio: "Louis Bobet, dit Louison Bobet, né le 12 mars 1925 à Saint-Méen-le-Grand (Ille-et-Vilaine) et mort le 13 mars 1983 à Biarritz (Pyrénées-Atlantiques), est un coureur cycliste français. Professionnel de 1947 à 1961, il est considéré comme l'un des plus grands coureurs de l'histoire du cyclisme et possède l'un des palmarès les plus riches de son sport.",
+		afficheRouge: false,
+		afficheBleu: false,
+		afficheVert: true
+	    }
+	}
+    }).mount('#application')
+  </script>
+</html>

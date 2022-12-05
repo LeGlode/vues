@@ -1,0 +1,42 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    margin: 1rem;
+}
+
+
+.boite {
+    height: 5rem;
+    width: 5rem;
+    background-color: #800008;
+    border-radius: 6px;
+    border: 3px solid transparent;
+    margin: .5rem;
+}
+
+.rouge {
+    background-color: #800008;
+    border-radius: 6px;
+    border-color:  #802208;
+}
+
+.bleu {
+    background-color: #082280;
+    border-radius: 6px;
+    border-color:  #08a280;
+}
+
+.vert {
+    background-color: #228008;
+    border-radius: 6px;
+    border-color:  #068210;
+}
