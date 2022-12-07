@@ -1,0 +1,50 @@
+@import 'couleurs.css';
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    color: var(--noir8);
+    margin: 1rem;
+}
+
+p {
+    text-indent: 0;
+    border-left: 2px solid inherit;
+}
+
+.rouge {
+    background-color: var(--rouge3);
+}
+
+.vert {
+    background-color: var(--vert17);
+}
+
+.bleu {
+    background-color: var(--bleu23);
+}
+
+button.compteur {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+    color: var(--blanc8);
+}
+
+button.raz {
+    margin: .5rem;
+    padding: .rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background-color: var(--rouge12);
+}

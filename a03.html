@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <link href="a03.css" rel="stylesheet"/>    
+    <meta charset="UTF-8"/>
+    <title>api</title>
+  </head>
+  <body>
+    <div id="application">
+      <button class="compteur vert" @click="bat++">{{ bat }}</button>
+      <button class="raz" @click="raz1"></button>
+      <button class="compteur bleu" @click="bi++">{{ bi }}</button>
+      <button class="raz" @click="raz2"></button>
+    </div>
+  </body>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script>    
+    const {createApp} = Vue;
+    createApp({
+	el: "#application",
+	data: () => {
+	    return {
+		bat: 0,
+		bi: 0	
+	    }
+	},
+	methods: {
+	    raz1(){
+		this.bat = 0;
+	    },
+	    raz2(){
+		this.bi = 0;
+	    }
+	}
+	}).mount('#application');
+  </script>
+</html>
